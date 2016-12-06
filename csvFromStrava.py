@@ -7,6 +7,7 @@ athlete = client.get_athlete()
 activities = client.get_activities(limit=9000)
 
 for a in activities:
+  #Add an if statement to filter activity type: e.g. if a.type == 'Ride': 
   id = a.id
   name = a.name
   tp = a.type
